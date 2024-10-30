@@ -15,9 +15,13 @@
       "import": "./index.js"
     },
     "./mod": {
-      "types": "./packages/module/dist/types.d.ts",
-      "import": "./packages/module/dist/module.mjs",
-      "require": "./packages/module/dist/module.cjs"
+      "types": "./packages/mod/dist/types.d.ts",
+      "import": "./packages/mod/dist/module.mjs",
+      "require": "./packages/mod/dist/module.cjs"
     }
-  }
+  },
+  "files": [
+    "index.js",
+    "packages/mod/dist"
+  ]
 }
