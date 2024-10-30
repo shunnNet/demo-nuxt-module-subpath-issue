@@ -1,0 +1,23 @@
+{
+  "name": "subpath-demo",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "exports": {
+    ".": {
+      "import": "./index.js"
+    },
+    "./mod": {
+      "types": "./packages/module/dist/types.d.ts",
+      "import": "./packages/module/dist/module.mjs",
+      "require": "./packages/module/dist/module.cjs"
+    }
+  }
+}
